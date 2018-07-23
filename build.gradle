@@ -11,7 +11,7 @@ plugins {
     id 'java'
     id 'war'
     //id 'org.akhikhl.gretty' version '2.0.0' 
-    id 'org.gretty' version '2.1.0' 
+    id 'org.gretty' version '2.2.0'
 }
 
 // In this section you declare where to find the dependencies of your project
@@ -23,6 +23,11 @@ repositories {
 
 dependencies {
     compile 'org.glassfish.jersey.containers:jersey-container-servlet:2.26'
+    compile 'org.glassfish.jersey.inject:jersey-hk2:2.27'
 
     testImplementation 'junit:junit:4.12'
+}
+
+war {
+    archiveName = 'jersey.war'
 }
