@@ -8,10 +8,10 @@
 
 // Apply the java-library plugin to add support for Java Library
 plugins {
-    id 'java'
-    id 'war'
-    //id 'org.akhikhl.gretty' version '2.0.0' 
-    id 'org.gretty' version '2.2.0'
+    id "java"
+    id "war"
+    id "org.gretty" version "2.3.1"
+    id "eclipse"
 }
 
 // for akhikhl.gretty
